@@ -17,6 +17,7 @@
 
         protected virtual void BeforeActionExcute()
         { }
+
         protected virtual void AfterActionExcute()
         { }
     }

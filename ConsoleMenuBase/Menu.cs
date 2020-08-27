@@ -5,13 +5,14 @@ using System.Linq;
 namespace ConsoleMenuBase
 {
     public class Menu
-    { 
+    {
         public Menu()
         {
             MenuItems = new List<MenuItem>();
             MenuTopString = "*************************************************";
             MenuBottomString = "**************************************************";
         }
+
         public string ShowInfo { get; set; }
 
         public string MenuTopString { get; set; }

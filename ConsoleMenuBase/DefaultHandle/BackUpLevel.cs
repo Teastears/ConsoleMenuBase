@@ -1,9 +1,4 @@
-﻿using ConsoleMenuBase.IMenuHandleBase;
-using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ConsoleMenuBase.DefaultHandle
+﻿namespace ConsoleMenuBase.DefaultHandle
 {
     public class BackUpLevel : IMenuHandle
     {
@@ -13,6 +8,7 @@ namespace ConsoleMenuBase.DefaultHandle
         {
             Menu = UpLevel;
         }
+
         public void Handle(MenuItem sender)
         {
             Menu.Show();

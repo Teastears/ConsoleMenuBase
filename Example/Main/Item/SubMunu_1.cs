@@ -2,11 +2,6 @@
 using ConsoleMenuBase.DefaultHandle;
 using ConsoleMenuBase.IMenuHandleBase;
 using Example.Main.Handle;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Example.Main.Item
 {

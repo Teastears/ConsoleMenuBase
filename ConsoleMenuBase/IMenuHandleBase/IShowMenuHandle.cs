@@ -11,6 +11,7 @@ namespace ConsoleMenuBase.IMenuHandleBase
         public Menu Parent { get; set; }
 
         public bool IsClear { set; get; }
+
         public IShowMenuHandle(Menu Sender)
         {
             IsClear = false;
