@@ -6,6 +6,7 @@ namespace ConsoleMenuBase
 {
     public class Menu
     {
+        public event Action<Exception> OnError;
         public Menu()
         {
             MenuItems = new List<MenuItem>();
@@ -78,7 +79,14 @@ namespace ConsoleMenuBase
             }
             catch (Exception e)
             {
-                Console.WriteLine(e.Message);
+                if (OnError == null)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                else
+                {
+                    OnError(e);
+                }                
                 return false;
             }
         }
